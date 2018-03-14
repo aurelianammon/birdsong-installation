@@ -13,12 +13,12 @@ void setup() {
   background(255);
 
   // Load a soundfile from the /samples_library
-  soundFile.add(new SoundFile(this, "commong_nightingale_samples-001.wav"));  
-  soundFile.add(new SoundFile(this, "commong_nightingale_samples-002.wav"));  
-  soundFile.add(new SoundFile(this, "commong_nightingale_samples-003.wav"));
-  soundFile.add(new SoundFile(this, "commong_nightingale_samples-004.wav"));
-  soundFile.add(new SoundFile(this, "commong_nightingale_samples-005.wav")); 
-  soundFile.add(new SoundFile(this, "commong_nightingale_samples-006.wav")); 
+  soundFile.add(new SoundFile(this, "sparrowhawk_001.wav"));  
+  soundFile.add(new SoundFile(this, "sparrowhawk_002.wav"));  
+  soundFile.add(new SoundFile(this, "sparrowhawk_003.wav"));
+  soundFile.add(new SoundFile(this, "sparrowhawk_004.wav"));
+  soundFile.add(new SoundFile(this, "sparrowhawk_005.wav")); 
+  soundFile.add(new SoundFile(this, "sparrowhawk_006.wav")); 
   //file.play();
 }      
 
@@ -48,6 +48,10 @@ void keyReleased(){
   }
   
    if (keyCode == '3' && pressed == true){
+    pressed = false;  
+  }
+  
+   if (keyCode == '4' && pressed == true){
     pressed = false;  
   }
 }
@@ -90,6 +94,7 @@ void keyPressed() {
     soundFile.get(5).play();
     pressed = true;
   }
+ 
 }
 
 void stopAll() {
