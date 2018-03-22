@@ -187,7 +187,6 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "int", "bang" ],
 					"patching_rect" : [ 741.0, 171.5, 38.0, 22.0 ],
-					"presentation_rect" : [ 737.0, 165.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "urn 6"
 				}
@@ -628,7 +627,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"patching_rect" : [ 195.0, 462.0, 61.0, 22.0 ],
-					"presentation_rect" : [ 192.0, 461.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "random 5"
 				}
@@ -682,7 +680,6 @@
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 132.5, 263.0, 50.0, 22.0 ],
-					"presentation_rect" : [ 132.5, 262.0, 0.0, 0.0 ],
 					"style" : ""
 				}
 
