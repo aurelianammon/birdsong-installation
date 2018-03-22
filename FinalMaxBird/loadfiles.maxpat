@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 29.0, 111.0, 1092.0, 841.0 ],
+		"rect" : [ 34.0, 111.0, 1092.0, 841.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -37,6 +37,516 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-1",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patcher" : 					{
+						"fileversion" : 1,
+						"appversion" : 						{
+							"major" : 7,
+							"minor" : 3,
+							"revision" : 4,
+							"architecture" : "x86",
+							"modernui" : 1
+						}
+,
+						"rect" : [ 59.0, 104.0, 640.0, 480.0 ],
+						"bglocked" : 0,
+						"openinpresentation" : 0,
+						"default_fontsize" : 12.0,
+						"default_fontface" : 0,
+						"default_fontname" : "Arial",
+						"gridonopen" : 1,
+						"gridsize" : [ 15.0, 15.0 ],
+						"gridsnaponopen" : 1,
+						"objectsnaponopen" : 1,
+						"statusbarvisible" : 2,
+						"toolbarvisible" : 1,
+						"lefttoolbarpinned" : 0,
+						"toptoolbarpinned" : 0,
+						"righttoolbarpinned" : 0,
+						"bottomtoolbarpinned" : 0,
+						"toolbars_unpinned_last_save" : 0,
+						"tallnewobj" : 0,
+						"boxanimatetime" : 200,
+						"enablehscroll" : 1,
+						"enablevscroll" : 1,
+						"devicewidth" : 0.0,
+						"description" : "",
+						"digest" : "",
+						"tags" : "",
+						"style" : "",
+						"subpatcher_template" : "",
+						"visible" : 1,
+						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-2",
+									"linecount" : 2,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 203.5, 320.5, 150.0, 33.0 ],
+									"style" : "",
+									"text" : "you can see the whole list of your soundfiles here"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-5",
+									"linecount" : 6,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 144.5, 124.5, 156.0, 87.0 ],
+									"style" : "",
+									"text" : "the folder with your soundfiles should be in a subfolder inrelation to your head max-patch. you can paste the name of that folder here."
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-7",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 245.5, 503.5, 56.0, 22.0 ],
+									"style" : "",
+									"text" : "deferlow"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-9",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 101.0, 359.5, 59.0, 22.0 ],
+									"style" : "",
+									"text" : "tosymbol"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-10",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "int" ],
+									"patching_rect" : [ 60.5, 359.5, 29.5, 22.0 ],
+									"style" : "",
+									"text" : "+ 2"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-11",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "int" ],
+									"patching_rect" : [ 245.5, 470.5, 29.5, 22.0 ],
+									"style" : "",
+									"text" : "- 1"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-13",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "bang", "int" ],
+									"patching_rect" : [ 224.5, 387.5, 30.0, 22.0 ],
+									"style" : "",
+									"text" : "t b i"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-14",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 3,
+									"outlettype" : [ "bang", "bang", "int" ],
+									"patching_rect" : [ 224.5, 436.5, 40.0, 22.0 ],
+									"style" : "",
+									"text" : "uzi"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-17",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
+									"patching_rect" : [ 224.5, 359.5, 87.0, 22.0 ],
+									"style" : "",
+									"text" : "route populate"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-20",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 60.5, 415.5, 59.5, 22.0 ],
+									"style" : "",
+									"text" : "join"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-21",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "clear" ],
+									"patching_rect" : [ 60.5, 283.5, 53.0, 22.0 ],
+									"style" : "",
+									"text" : "t s clear"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-22",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 311.0, 213.5, 90.0, 22.0 ],
+									"style" : "",
+									"text" : "autopopulate 1"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-24",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 60.5, 247.5, 87.0, 22.0 ],
+									"style" : "",
+									"text" : "prepend prefix"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"autopopulate" : 1,
+									"id" : "obj-26",
+									"items" : [ "commong_nightingale_samples-001.wav", ",", "commong_nightingale_samples-002.wav", ",", "commong_nightingale_samples-003.wav", ",", "commong_nightingale_samples-004.wav", ",", "commong_nightingale_samples-005.wav", ",", "commong_nightingale_samples-006.wav", ",", "commong_nightingale_samples-007.wav", ",", "commong_nightingale_samples-008.wav", ",", "commong_nightingale_samples-009.wav", ",", "commong_nightingale_samples-010.wav", ",", "commong_nightingale_samples-011.wav", ",", "commong_nightingale_samples-012.wav", ",", "commong_nightingale_samples-013.wav", ",", "commong_nightingale_samples-014.wav", ",", "commong_nightingale_samples-015.wav", ",", "commong_nightingale_samples-016.wav", ",", "commong_nightingale_samples-017.wav", ",", "commong_nightingale_samples-018.wav", ",", "commong_nightingale_samples-019.wav" ],
+									"maxclass" : "umenu",
+									"numinlets" : 1,
+									"numoutlets" : 3,
+									"outlettype" : [ "int", "", "" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 60.5, 320.5, 138.0, 22.0 ],
+									"prefix" : "Macintosh HD:/Users/itz/Documents/GitHub/birdsong-installation/FinalMaxBird/nightingale/",
+									"style" : ""
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-27",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 60.5, 458.5, 98.0, 22.0 ],
+									"style" : "",
+									"text" : "prepend preload"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"color" : [ 0.439216, 0.74902, 0.254902, 1.0 ],
+									"id" : "obj-28",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 60.5, 503.5, 116.0, 22.0 ],
+									"save" : [ "#N", "sflist~", "nightingale_2", 483840, ";" ],
+									"style" : "",
+									"text" : "sflist~ nightingale_2"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"color" : [ 0.784314, 0.145098, 0.023529, 1.0 ],
+									"id" : "obj-31",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 60.5, 213.5, 177.0, 22.0 ],
+									"style" : "",
+									"text" : "sprintf symout %snightingale_2"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-32",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "bang", "bang" ],
+									"patching_rect" : [ 60.5, 100.0, 34.0, 22.0 ],
+									"style" : "",
+									"text" : "t b b"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-36",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 60.5, 135.5, 34.0, 22.0 ],
+									"style" : "",
+									"text" : "path"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-37",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
+									"patching_rect" : [ 60.5, 172.5, 69.0, 22.0 ],
+									"save" : [ "#N", "thispatcher", ";", "#Q", "end", ";" ],
+									"style" : "",
+									"text" : "thispatcher"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"comment" : "",
+									"id" : "obj-326",
+									"index" : 1,
+									"maxclass" : "inlet",
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"outlettype" : [ "bang" ],
+									"patching_rect" : [ 60.5, 40.0, 30.0, 30.0 ],
+									"style" : ""
+								}
+
+							}
+ ],
+						"lines" : [ 							{
+								"patchline" : 								{
+									"destination" : [ "obj-20", 0 ],
+									"source" : [ "obj-10", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-7", 0 ],
+									"source" : [ "obj-11", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-14", 1 ],
+									"source" : [ "obj-13", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-14", 0 ],
+									"source" : [ "obj-13", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-11", 0 ],
+									"source" : [ "obj-14", 2 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-13", 0 ],
+									"source" : [ "obj-17", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-27", 0 ],
+									"source" : [ "obj-20", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-26", 0 ],
+									"source" : [ "obj-21", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-26", 0 ],
+									"source" : [ "obj-21", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-26", 0 ],
+									"midpoints" : [ 320.5, 306.5, 70.0, 306.5 ],
+									"source" : [ "obj-22", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-21", 0 ],
+									"source" : [ "obj-24", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-10", 0 ],
+									"source" : [ "obj-26", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-17", 0 ],
+									"midpoints" : [ 189.0, 355.5, 234.0, 355.5 ],
+									"source" : [ "obj-26", 2 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-9", 0 ],
+									"source" : [ "obj-26", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-28", 0 ],
+									"source" : [ "obj-27", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-24", 0 ],
+									"source" : [ "obj-31", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-22", 0 ],
+									"midpoints" : [ 85.0, 123.5, 320.5, 123.5 ],
+									"source" : [ "obj-32", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-36", 0 ],
+									"source" : [ "obj-32", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-32", 0 ],
+									"source" : [ "obj-326", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-37", 0 ],
+									"source" : [ "obj-36", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-31", 0 ],
+									"midpoints" : [ 120.0, 206.5, 70.0, 206.5 ],
+									"source" : [ "obj-37", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-26", 0 ],
+									"midpoints" : [ 255.0, 537.5, 52.0, 537.5, 52.0, 315.5, 70.0, 315.5 ],
+									"source" : [ "obj-7", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-20", 1 ],
+									"source" : [ "obj-9", 0 ]
+								}
+
+							}
+ ]
+					}
+,
+					"patching_rect" : [ 296.75, 104.5, 92.0, 22.0 ],
+					"presentation_rect" : [ 296.75, 106.5, 0.0, 0.0 ],
+					"saved_object_attributes" : 					{
+						"description" : "",
+						"digest" : "",
+						"globalpatchername" : "",
+						"style" : "",
+						"tags" : ""
+					}
+,
+					"style" : "",
+					"text" : "p nightingale_2"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-345",
 					"maxclass" : "newobj",
@@ -252,14 +762,14 @@
 								"box" : 								{
 									"autopopulate" : 1,
 									"id" : "obj-275",
-									"items" : [ "sparrowhawk_001.wav", ",", "sparrowhawk_002.wav", ",", "sparrowhawk_003.wav", ",", "sparrowhawk_004.wav", ",", "sparrowhawk_005.wav", ",", "sparrowhawk_006.wav", ",", "sparrowhawk_007.wav" ],
+									"items" : [ "warning_calls-001.wav", ",", "warning_calls-002.wav", ",", "warning_calls-003.wav" ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
 									"outlettype" : [ "int", "", "" ],
 									"parameter_enable" : 0,
 									"patching_rect" : [ 60.5, 320.5, 138.0, 22.0 ],
-									"prefix" : "Macintosh HD:/Users/itz/Documents/GitHub/birdsong-installation/FinalMaxBird/sparrowhawk/",
+									"prefix" : "Macintosh HD:/Users/itz/Documents/GitHub/birdsong-installation/FinalMaxBird/warning_calls/",
 									"style" : ""
 								}
 
@@ -760,14 +1270,14 @@
 								"box" : 								{
 									"autopopulate" : 1,
 									"id" : "obj-295",
-									"items" : [ "commong_nightingale_samples-001.wav", ",", "commong_nightingale_samples-002.wav", ",", "commong_nightingale_samples-003.wav", ",", "commong_nightingale_samples-004.wav", ",", "commong_nightingale_samples-005.wav", ",", "commong_nightingale_samples-006.wav", ",", "commong_nightingale_samples-007.wav", ",", "commong_nightingale_samples-008.wav", ",", "commong_nightingale_samples-009.wav", ",", "commong_nightingale_samples-010.wav", ",", "commong_nightingale_samples-011.wav", ",", "commong_nightingale_samples-012.wav", ",", "commong_nightingale_samples-013.wav", ",", "commong_nightingale_samples-014.wav", ",", "commong_nightingale_samples-015.wav", ",", "commong_nightingale_samples-016.wav", ",", "commong_nightingale_samples-017.wav", ",", "commong_nightingale_samples-018.wav", ",", "commong_nightingale_samples-019.wav" ],
+									"items" : "savis_warbler.wav",
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
 									"outlettype" : [ "int", "", "" ],
 									"parameter_enable" : 0,
 									"patching_rect" : [ 60.5, 320.5, 138.0, 22.0 ],
-									"prefix" : "Macintosh HD:/Users/itz/Documents/GitHub/birdsong-installation/FinalMaxBird/nightingale/",
+									"prefix" : "Macintosh HD:/Users/itz/Documents/GitHub/birdsong-installation/FinalMaxBird/savis_warbler/",
 									"style" : ""
 								}
 
@@ -1268,14 +1778,14 @@
 								"box" : 								{
 									"autopopulate" : 1,
 									"id" : "obj-315",
-									"items" : [ "common_caffinch-001.wav", ",", "common_caffinch-002.wav", ",", "common_caffinch-003.wav", ",", "common_caffinch-004.wav", ",", "common_caffinch-005.wav", ",", "common_caffinch-006.wav" ],
+									"items" : [ "mistle_trush-001.wav", ",", "mistle_trush-002.wav", ",", "mistle_trush-003.wav", ",", "mistle_trush-004.wav", ",", "mistle_trush-005.wav", ",", "mistle_trush-006.wav", ",", "mistle_trush-007.wav", ",", "mistle_trush-008.wav", ",", "mistle_trush-009.wav" ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
 									"outlettype" : [ "int", "", "" ],
 									"parameter_enable" : 0,
 									"patching_rect" : [ 60.5, 320.5, 138.0, 22.0 ],
-									"prefix" : "Macintosh HD:/Users/itz/Documents/GitHub/birdsong-installation/FinalMaxBird/common_cafffinch/",
+									"prefix" : "Macintosh HD:/Users/itz/Documents/GitHub/birdsong-installation/FinalMaxBird/mistle_thrush/",
 									"style" : ""
 								}
 
@@ -1776,14 +2286,14 @@
 								"box" : 								{
 									"autopopulate" : 1,
 									"id" : "obj-95",
-									"items" : [ "Flap_part3.wav", ",", "Flap_part_1.wav", ",", "Flap_part_2.wav" ],
+									"items" : [ "marsh_warbler-001.wav", ",", "marsh_warbler-002.wav", ",", "marsh_warbler-003.wav", ",", "marsh_warbler-004.wav", ",", "marsh_warbler-005.wav", ",", "marsh_warbler-006.wav" ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
 									"outlettype" : [ "int", "", "" ],
 									"parameter_enable" : 0,
 									"patching_rect" : [ 60.583374, 320.5, 138.0, 22.0 ],
-									"prefix" : "Macintosh HD:/Users/itz/Documents/GitHub/birdsong-installation/FinalMaxBird/wings_flapping/",
+									"prefix" : "Macintosh HD:/Users/itz/Documents/GitHub/birdsong-installation/FinalMaxBird/marsh_warbler/",
 									"style" : ""
 								}
 
@@ -2284,14 +2794,14 @@
 								"box" : 								{
 									"autopopulate" : 1,
 									"id" : "obj-115",
-									"items" : [ "sparrowhawk_001.wav", ",", "sparrowhawk_002.wav", ",", "sparrowhawk_003.wav", ",", "sparrowhawk_004.wav", ",", "sparrowhawk_005.wav", ",", "sparrowhawk_006.wav", ",", "sparrowhawk_007.wav" ],
+									"items" : [ "long_eared_owl-001.wav", ",", "long_eared_owl-002.wav", ",", "long_eared_owl-003.wav", ",", "long_eared_owl-004.wav" ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
 									"outlettype" : [ "int", "", "" ],
 									"parameter_enable" : 0,
 									"patching_rect" : [ 60.25, 320.5, 138.0, 22.0 ],
-									"prefix" : "Macintosh HD:/Users/itz/Documents/GitHub/birdsong-installation/FinalMaxBird/sparrowhawk/",
+									"prefix" : "Macintosh HD:/Users/itz/Documents/GitHub/birdsong-installation/FinalMaxBird/long-eared_owl/",
 									"style" : ""
 								}
 
@@ -2792,14 +3302,14 @@
 								"box" : 								{
 									"autopopulate" : 1,
 									"id" : "obj-135",
-									"items" : [ "commong_nightingale_samples-001.wav", ",", "commong_nightingale_samples-002.wav", ",", "commong_nightingale_samples-003.wav", ",", "commong_nightingale_samples-004.wav", ",", "commong_nightingale_samples-005.wav", ",", "commong_nightingale_samples-006.wav", ",", "commong_nightingale_samples-007.wav", ",", "commong_nightingale_samples-008.wav", ",", "commong_nightingale_samples-009.wav", ",", "commong_nightingale_samples-010.wav", ",", "commong_nightingale_samples-011.wav", ",", "commong_nightingale_samples-012.wav", ",", "commong_nightingale_samples-013.wav", ",", "commong_nightingale_samples-014.wav", ",", "commong_nightingale_samples-015.wav", ",", "commong_nightingale_samples-016.wav", ",", "commong_nightingale_samples-017.wav", ",", "commong_nightingale_samples-018.wav", ",", "commong_nightingale_samples-019.wav" ],
+									"items" : [ "eurasian_wren-001.wav", ",", "eurasian_wren-002.wav", ",", "eurasian_wren-003.wav", ",", "eurasian_wren-004.wav", ",", "eurasian_wren-005.wav" ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
 									"outlettype" : [ "int", "", "" ],
 									"parameter_enable" : 0,
 									"patching_rect" : [ 60.25, 320.5, 138.0, 22.0 ],
-									"prefix" : "Macintosh HD:/Users/itz/Documents/GitHub/birdsong-installation/FinalMaxBird/nightingale/",
+									"prefix" : "Macintosh HD:/Users/itz/Documents/GitHub/birdsong-installation/FinalMaxBird/eurasian_wren/",
 									"style" : ""
 								}
 
@@ -3300,14 +3810,14 @@
 								"box" : 								{
 									"autopopulate" : 1,
 									"id" : "obj-155",
-									"items" : [ "common_caffinch-001.wav", ",", "common_caffinch-002.wav", ",", "common_caffinch-003.wav", ",", "common_caffinch-004.wav", ",", "common_caffinch-005.wav", ",", "common_caffinch-006.wav" ],
+									"items" : [ "eurasian_reed_warbler_-001.wav", ",", "eurasian_reed_warbler_-002.wav", ",", "eurasian_reed_warbler_-003.wav", ",", "eurasian_reed_warbler_-004.wav", ",", "eurasian_reed_warbler_-005.wav", ",", "eurasian_reed_warbler_-006.wav", ",", "eurasian_reed_warbler_-007.wav", ",", "eurasian_reed_warbler_-008.wav" ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
 									"outlettype" : [ "int", "", "" ],
 									"parameter_enable" : 0,
 									"patching_rect" : [ 60.25, 320.5, 138.0, 22.0 ],
-									"prefix" : "Macintosh HD:/Users/itz/Documents/GitHub/birdsong-installation/FinalMaxBird/common_cafffinch/",
+									"prefix" : "Macintosh HD:/Users/itz/Documents/GitHub/birdsong-installation/FinalMaxBird/eurasian_reed_warbler/",
 									"style" : ""
 								}
 
@@ -3817,14 +4327,14 @@
 								"box" : 								{
 									"autopopulate" : 1,
 									"id" : "obj-81",
-									"items" : [ "Flap_part3.wav", ",", "Flap_part_1.wav", ",", "Flap_part_2.wav" ],
+									"items" : [ "eurasian_blackcap-001.wav", ",", "eurasian_blackcap-002.wav", ",", "eurasian_blackcap-003.wav", ",", "eurasian_blackcap-004.wav", ",", "eurasian_blackcap-005.wav", ",", "eurasian_blackcap-006.wav", ",", "eurasian_blackcap-007.wav", ",", "eurasian_blackcap-008.wav", ",", "eurasian_blackcap-009.wav", ",", "eurasian_blackcap-010.wav" ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
 									"outlettype" : [ "int", "", "" ],
 									"parameter_enable" : 0,
 									"patching_rect" : [ 60.833374, 320.5, 138.0, 22.0 ],
-									"prefix" : "Macintosh HD:/Users/itz/Documents/GitHub/birdsong-installation/FinalMaxBird/wings_flapping/",
+									"prefix" : "Macintosh HD:/Users/itz/Documents/GitHub/birdsong-installation/FinalMaxBird/eurasian_blackcap/",
 									"style" : ""
 								}
 
@@ -4095,7 +4605,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 481.75, 104.5, 121.0, 22.0 ],
+					"patching_rect" : [ 388.75, 205.833282, 121.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -4325,14 +4835,14 @@
 								"box" : 								{
 									"autopopulate" : 1,
 									"id" : "obj-60",
-									"items" : [ "sparrowhawk_001.wav", ",", "sparrowhawk_002.wav", ",", "sparrowhawk_003.wav", ",", "sparrowhawk_004.wav", ",", "sparrowhawk_005.wav", ",", "sparrowhawk_006.wav", ",", "sparrowhawk_007.wav" ],
+									"items" : [ "common_grasshopper_warbler-001.wav", ",", "common_grasshopper_warbler-002.wav", ",", "common_grasshopper_warbler-003.wav", ",", "common_grasshopper_warbler-004.wav", ",", "common_grasshopper_warbler-005.wav" ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
 									"outlettype" : [ "int", "", "" ],
 									"parameter_enable" : 0,
 									"patching_rect" : [ 60.5, 320.5, 138.0, 22.0 ],
-									"prefix" : "Macintosh HD:/Users/itz/Documents/GitHub/birdsong-installation/FinalMaxBird/sparrowhawk/",
+									"prefix" : "Macintosh HD:/Users/itz/Documents/GitHub/birdsong-installation/FinalMaxBird/common_grasshopper_warbler/",
 									"style" : ""
 								}
 
@@ -4603,7 +5113,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 280.75, 104.5, 186.0, 22.0 ],
+					"patching_rect" : [ 422.75, 109.5, 186.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -5650,8 +6160,16 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
+					"destination" : [ "obj-1", 0 ],
+					"order" : 4,
+					"source" : [ "obj-44", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-325", 0 ],
-					"order" : 10,
+					"order" : 11,
 					"source" : [ "obj-44", 0 ]
 				}
 
@@ -5659,70 +6177,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-327", 0 ],
-					"order" : 6,
-					"source" : [ "obj-44", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-329", 0 ],
-					"order" : 3,
-					"source" : [ "obj-44", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-331", 0 ],
-					"order" : 0,
-					"source" : [ "obj-44", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-333", 0 ],
-					"order" : 9,
-					"source" : [ "obj-44", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-335", 0 ],
-					"order" : 5,
-					"source" : [ "obj-44", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-337", 0 ],
-					"order" : 2,
-					"source" : [ "obj-44", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-339", 0 ],
-					"order" : 1,
-					"source" : [ "obj-44", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-341", 0 ],
-					"order" : 8,
-					"source" : [ "obj-44", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-343", 0 ],
 					"order" : 7,
 					"source" : [ "obj-44", 0 ]
 				}
@@ -5730,8 +6184,72 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-329", 0 ],
+					"order" : 1,
+					"source" : [ "obj-44", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-331", 0 ],
+					"order" : 2,
+					"source" : [ "obj-44", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-333", 0 ],
+					"order" : 10,
+					"source" : [ "obj-44", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-335", 0 ],
+					"order" : 6,
+					"source" : [ "obj-44", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-337", 0 ],
+					"order" : 3,
+					"source" : [ "obj-44", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-339", 0 ],
+					"order" : 0,
+					"source" : [ "obj-44", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-341", 0 ],
+					"order" : 9,
+					"source" : [ "obj-44", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-343", 0 ],
+					"order" : 8,
+					"source" : [ "obj-44", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-345", 0 ],
-					"order" : 4,
+					"order" : 5,
 					"source" : [ "obj-44", 0 ]
 				}
 
