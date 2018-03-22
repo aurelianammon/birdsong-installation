@@ -20,6 +20,26 @@ client.on('message', function(topic, message) {
   console.log('new message:', topic, message.toString());
 });
 
-function do_publish() {
-	client.publish('/hello', 'world');
+function do_publish(number) {
+
+	switch (number) {
+		case 1:
+			var audio = new Audio('commong_nightingale_samples-001.wav');
+			audio.play();
+			break;
+		case 2:
+			var audio = new Audio('commong_nightingale_samples-002.wav');
+			audio.play();
+			break;
+		case 3:
+			var audio = new Audio('commong_nightingale_samples-003.wav');
+			audio.play();
+			break;
+		case 4:
+			var audio = new Audio('commong_nightingale_samples-003.wav');
+			audio.play();
+			break;
+	}
+
+	// client.publish('/hello', 'world');
 }
