@@ -20,26 +20,47 @@ client.on('message', function(topic, message) {
   console.log('new message:', topic, message.toString());
 });
 
+var isPlaying = false;
+
 function do_publish(number) {
 
 	switch (number) {
 		case 1:
-			var audio = new Audio('commong_nightingale_samples-001.wav');
-			audio.play();
+			if (!isPlaying) {
+				var audio = new Audio('commong_nightingale_samples-001.wav');
+				audio.play();
+				isPlaying = true;
+				audio.onended = function() {isPlaying = false};
+			}
 			break;
 		case 2:
-			var audio = new Audio('commong_nightingale_samples-002.wav');
-			audio.play();
+			if (!isPlaying) {
+				var audio = new Audio('commong_nightingale_samples-002.wav');
+				audio.play();
+				isPlaying = true;
+				audio.onended = function() {isPlaying = false};
+			}
 			break;
 		case 3:
-			var audio = new Audio('commong_nightingale_samples-003.wav');
-			audio.play();
+			if (!isPlaying) {
+				var audio = new Audio('commong_nightingale_samples-003.wav');
+				audio.play();
+				isPlaying = true;
+				audio.onended = function() {isPlaying = false};
+			}
 			break;
 		case 4:
-			var audio = new Audio('commong_nightingale_samples-003.wav');
-			audio.play();
+			if (!isPlaying) {
+				var audio = new Audio('commong_nightingale_samples-004.wav');
+				audio.play();
+				isPlaying = true;
+				audio.onended = function() {isPlaying = false};
+			}
 			break;
 	}
 
 	// client.publish('/hello', 'world');
 }
+
+
+
