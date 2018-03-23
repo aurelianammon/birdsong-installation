@@ -3279,7 +3279,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 973.0, 377.5, 86.0, 22.0 ],
+					"patching_rect" : [ 973.0, 382.5, 86.0, 22.0 ],
 					"style" : "",
 					"text" : "receive~ bird6"
 				}
@@ -3526,9 +3526,9 @@
 					"maxclass" : "newobj",
 					"numinlets" : 6,
 					"numoutlets" : 0,
-					"patching_rect" : [ 844.0, 609.0, 97.0, 22.0 ],
+					"patching_rect" : [ 908.0, 717.0, 103.0, 22.0 ],
 					"style" : "",
-					"text" : "dac~ 1 2 3 4 5 6"
+					"text" : "dac~ 1 3 5 7 9 11"
 				}
 
 			}
