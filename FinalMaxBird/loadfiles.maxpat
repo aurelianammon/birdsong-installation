@@ -79,7 +79,6 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-2",
@@ -260,7 +259,7 @@
 									"outlettype" : [ "int", "", "" ],
 									"parameter_enable" : 0,
 									"patching_rect" : [ 60.5, 320.5, 138.0, 22.0 ],
-									"prefix" : "Macintosh HD:/Users/itz/Documents/GitHub/birdsong-installation/FinalMaxBird/nightingale/",
+									"prefix" : "Macintosh HD:/Users/itz/Documents/GitHub/birdsong-installation/FinalMaxBird/nightingale_2/",
 									"style" : ""
 								}
 
@@ -532,7 +531,6 @@
 					}
 ,
 					"patching_rect" : [ 296.75, 104.5, 92.0, 22.0 ],
-					"presentation_rect" : [ 296.75, 106.5, 0.0, 0.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -5678,6 +5676,7 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
+						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-55",
@@ -5884,10 +5883,10 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 60.5, 503.5, 139.0, 22.0 ],
-									"save" : [ "#N", "sflist~", "common_caffinch", 483840, ";" ],
+									"patching_rect" : [ 60.5, 503.5, 142.0, 22.0 ],
+									"save" : [ "#N", "sflist~", "common_cafffinch", 483840, ";" ],
 									"style" : "",
-									"text" : "sflist~ common_caffinch"
+									"text" : "sflist~ common_cafffinch"
 								}
 
 							}
